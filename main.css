@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'rokkitt';
+    src: url(fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'hepta';
+    src: url(fonts/Hepta_Slab/HeptaSlab-VariableFont_wght.ttf);
+}
+
+body{
+    background-color: #fffffd;
+}
+
+/* HEADER */
+
+header{
+    background-color: #121B14;
+    color: #fffffd;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.headline-div{
+    grid-column: 2;
+    text-align: center;
+    border-bottom: 1.5px solid #fffffd;
+}
+
+.contact-button-div{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.contact-button-div a{
+    background-color: #fffffd;
+    color: #121B14;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    width: 150px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-family: hepta;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact-button-div a:hover{
+    background-color: #121B14;
+    color: #fffffd;
+    border: 1.5px solid #fffffd;
+    cursor: pointer;
+}
+
+.flag-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flag-btn img{
+    width: 25px;
+}
+
+/* MAIN */
+
+main{
+    
+}
+
+.hero-section{
+    background-color: #121B14;
+    color: #fffffd;
+}
+
+h1{
+    padding: 1em 2em 0.5em 2.5em;
+    letter-spacing: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h2,
+p{
+    font-family: rokkitt;
+}
+
+h1,
+h3,
+h4,
+h5{
+    font-family: hepta;
+}
+
+
+footer{
+    background-color: #121B14;
+}
