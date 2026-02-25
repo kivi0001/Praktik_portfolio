@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <meta name="robots" content="noindex" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -12,14 +13,20 @@
         <h1>PORTFOLIO</h1>
       </div>
       <div class="contact-button-div">
-        <a href="">KONTAKT</a>
+        <a href="footer">KONTAKT</a>
+        <a href=""
+          >ENGLISH
+          <img
+            src="imgs/english-flag.png"
+            alt="et billede af det britiske flag"
+        /></a>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="portrait-imgs">
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src="" alt="et billede af Kia" />
+          <img src="" alt="et billede af Kia" />
         </div>
         <h2>Kia Vinther</h2>
         <h3 class="first-line">Studerende på Multimediedesign</h3>
@@ -69,38 +76,59 @@
       <section class="previous-work-section">
         <h4>Tidligere projekter</h4>
         <div>
-          <a href="">
-            <img src="" alt="" />
+          <a href="https://codepen.io/kimahivi/details/RNGwWvV">
+            <img
+              src="imgs/recap.webp"
+              alt="et billede fra et udsnit af hjemmeside/projekt, som forestiller en telefon med grafisk indhold i."
+            />
           </a>
-          <h5></h5>
-          <p></p>
+          <h5>Eksamensprojekt, 2. sem</h5>
+          <p>
+            Kodeuddrag fra projektet <br />(grafik ikke af mig) <br />(ikke
+            associeret med Dankort)
+          </p>
         </div>
         <div>
-          <a href="">
-            <img src="" alt="" />
+          <a href="https://kivi0001.github.io/todo_app_kia/">
+            <img
+              src="imgs/todo.webp"
+              alt="et billede fra et udsnit af hjemmeside/projekt, af en todoliste app."
+            />
           </a>
-          <h5></h5>
-          <p></p>
+          <h5>Nyere øvelse fra undervisning</h5>
+          <p>En app til at oprette todo lister <br />og opgaver</p>
         </div>
         <div>
-          <a href="">
-            <img src="" alt="" />
+          <a href="https://zingy-selkie-bb1a97.netlify.app/">
+            <img
+              src="imgs/skinwalker.webp"
+              alt="et billede fra et udsnit af hjemmeside/projekt, af et logo med et spøgelse, og teksten: skinwalker pets."
+            />
           </a>
-          <h5></h5>
-          <p></p>
+          <h5>Skoleprojekt</h5>
+          <p>
+            En øvelse i at anvende dark mode, forms, <br />Adobe illustrator og
+            SVG
+          </p>
         </div>
         <div>
-          <a href="">
-            <img src="" alt="" />
+          <a href="https://joyful-beijinho-b82fd0.netlify.app/">
+            <img
+              src="imgs/palestine.webp"
+              alt="et billede fra et udsnit af hjemmeside/projekt, som forestiller fire forskellige billeder af mennesker og natur."
+            />
           </a>
-          <h5></h5>
-          <p></p>
+          <h5>Skoleprojekt</h5>
+          <p>
+            En øvelse i at udvikle hero-sektioner, <br />producere indhold, og
+            anvende Lottiefiles
+          </p>
         </div>
         <div class="view-github-div">
-          <a href="">
-            <img src="" alt="" />
+          <a href="https://github.com/kivi0001?tab=repositories">
+            <img src="imgs/github-for-light-bg.webp" alt="github logo" />
           </a>
-          <a href="">
+          <a href="https://github.com/kivi0001?tab=repositories">
             <p>Se alle mine repositories på Github</p>
           </a>
         </div>
@@ -109,7 +137,13 @@
         <h4>Faglige kompetencer</h4>
         <div class="competencies-div">
           <div class="coding-div">
-            <h5>Kodning</h5>
+            <div class="prof-skills-headlines-divs">
+              <img
+                src="imgs/laptop.png"
+                alt="et ikon som forestiller en bærbar computer."
+              />
+              <h5>Kodning</h5>
+            </div>
             <ul class="coding-ul">
               <li>HTML</li>
               <li>CSS</li>
@@ -120,7 +154,13 @@
             </ul>
           </div>
           <div class="tools-div">
-            <h5>Værktøjer</h5>
+            <div class="prof-skills-headlines-divs">
+              <img
+                src="imgs/tool.png"
+                alt="et ikon som forestiller en svensknøgle."
+              />
+              <h5>Værktøjer</h5>
+            </div>
             <ul class="tools-ul">
               <li>Figma</li>
               <li>VScode</li>
@@ -131,7 +171,13 @@
             </ul>
           </div>
           <div class="tasks-div">
-            <h5>Opgaver</h5>
+            <div class="prof-skills-headlines-divs">
+              <img
+                src="imgs/tasks_lightbulb.png"
+                alt="et ikon som forestiller en elpære."
+              />
+              <h5>Opgaver</h5>
+            </div>
             <ul class="tasks-ul">
               <li>Redesign og opdatering af websites</li>
               <li>UX-prototyping</li>
@@ -193,11 +239,6 @@
             </li>
           </ul>
         </div>
-
-        <!--    Skriv liste, og lav footer -->
-
-        <!--  Få lagt billeder (komprimerede), links og fonte ind -->
-
         <div class="work-experience-div">
           <h5>Erhvervserfaring</h5>
           <ul>
@@ -255,32 +296,35 @@
         <div class="links-git-linkedin-div">
           <div class="github-footer-div">
             <p>Github</p>
-            <a href="">
-              <img src="" alt="" />
+            <a href="https://github.com/kivi0001?tab=repositories">
+              <img src="imgs/github-for-dark-bg.png" alt="Et github ikon." />
             </a>
           </div>
           <div class="linkedin-footer-div">
             <p>LinkedIn</p>
-            <a href="">
-              <img src="" alt="" />
+            <a href="https://www.linkedin.com/in/kia-vinther-4b3834bb/">
+              <img src="imgs/linked-in-icon.png" alt="Et linkedin ikon." />
             </a>
-          </div>
-        </div>
-        <div class="school-info-div">
-          <div class="school-website-div">
-            <p>Skolens hjemmeside:</p>
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </div>
-          <div class="internship-link-div">
-            <p>Information om praktik for virksomheder:</p>
-            <a href="https://www.ek.dk/for-virksomheder/faa-en-praktikant"
-              >https://www.ek.dk/for-virksomheder/faa-en-praktikant</a
-            >
           </div>
         </div>
       </section>
+      <div class="school-info-div">
+        <div class="school-website-div">
+          <p>Skolens hjemmeside:</p>
+          <a href="https://www.ek.dk/">
+            <img
+              src="imgs/ek-logo.webp"
+              alt="et logo fra Københavns Erhvervsakademi."
+            />
+          </a>
+        </div>
+        <div class="internship-link-div">
+          <p>Information om praktik for virksomheder:</p>
+          <a href="https://www.ek.dk/for-virksomheder/faa-en-praktikant"
+            >https://www.ek.dk/for-virksomheder/faa-en-praktikant</a
+          >
+        </div>
+      </div>
     </footer>
   </body>
 </html>
