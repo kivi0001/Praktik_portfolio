@@ -9,68 +9,83 @@
   </head>
   <body>
     <header>
-      <div class="headline-div">
-        <h1>PORTFOLIO</h1>
-      </div>
-      <div class="contact-button-div">
-        <a href="footer">KONTAKT</a>
-        <a class="flag-btn" href=""
-          >ENGLISH
-          <img
-            src="imgs/english-flag.png"
-            alt="et billede af det britiske flag"
-        /></a>
-      </div>
-    </header>
-    <main>
+      <section class="header-section">
+        <div class="headline-div">
+          <h1>PORTFOLIO</h1>
+        </div>
+        <div class="contact-button-div">
+          <a href="#footer" target="_self">KONTAKT</a>
+          <a class="flag-btn" href=""
+            >ENGLISH
+            <img
+              src="imgs/english-flag.png"
+              alt="et billede af det britiske flag"
+          /></a>
+        </div>
+      </section>
       <section class="hero-section">
         <div class="portrait-imgs">
-          <img src="imgs/placeholder1.png" alt="et billede af Kia" />
-          <img src="imgs/placeholder2.png" alt="et billede af Kia" />
+          <img
+            class="first-image"
+            src="imgs/placeholder1.png"
+            alt="et billede af Kia"
+          />
+          <img
+            class="second-image"
+            src="imgs/placeholder2.png"
+            alt="et billede af Kia"
+          />
         </div>
-        <h2>Kia Vinther</h2>
-        <h3 class="first-line">Studerende på Multimediedesign</h3>
-        <h3 class="second-line">ved Erhvervsakademi København</h3>
+        <div class="name-present">
+          <h2>Kia Vinther</h2>
+          <h3 class="first-line">Studerende på Multimediedesign</h3>
+          <h3 class="second-line">ved Erhvervsakademi København</h3>
+        </div>
       </section>
+      <section id="triangle"></section>
+    </header>
+    <main>
       <section class="about-me-section">
         <h4>Om mig</h4>
-        <div class="searching-intership-div">
-          <h5>Praktikpladssøgning</h5>
-          <p>
-            På mit fjerde og sidste semester, skal jeg i praktik, og søger i den
-            forbindelse en praktikplads, hvor jeg kan udvikle mine evner inden
-            for frontend.
-          </p>
-          <p>
-            Praktikken starter i løbet af august 2026, og varer 10 uger á 37
-            timer om ugen.
-          </p>
-          <p>
-            Efter de 10 ugers praktik, starter mit eksamensprojekt. Projektet
-            kommer til at omhandle det arbejde jeg har lavet i praktikken. På
-            den måde fortsætter vores samarbejde i en vis forstand, efter de 10
-            uger.
-          </p>
-          <p>Praktikken er ulønnet.</p>
-        </div>
-        <div class="who-am-i-div">
-          <h5>Hvem er jeg</h5>
-          <p>
-            Jeg er 32 år gammel, og studerer nu på mit 3. semester. Jeg bor med
-            min mand og vores datter på Amager, hvorfra jeg cykler til skole
-            hver dag.
-          </p>
-          <p>
-            Jeg vil beskrive mig selv som en social og udadvendt person, som
-            trives både i teams og i selvstændige arbejdssammenhænge. Jeg er
-            ambitiøs, stabil og arbejder målrettet.
-          </p>
-          <p>
-            Mine mål for uddannelsen er at blive ekspert i frontend udvikling,
-            og forståelse for kodning generelt - med tiden, håber jeg på at
-            udvikle evner indenfor backend, og måske arbejde mod at blive
-            fullstack udvikler.
-          </p>
+        <div id="about-me-div">
+          <div class="searching-intership-div">
+            <h5>Praktikpladssøgning</h5>
+            <p>
+              På mit fjerde og sidste semester, skal jeg i praktik, og søger i
+              den forbindelse en praktikplads, hvor jeg kan udvikle mine evner
+              inden for frontend.
+            </p>
+            <p>
+              Praktikken starter i løbet af august 2026, og varer 10 uger á 37
+              timer om ugen.
+            </p>
+            <p>
+              Efter de 10 ugers praktik, starter mit eksamensprojekt. Projektet
+              kommer til at omhandle det arbejde jeg har lavet i praktikken. På
+              den måde fortsætter vores samarbejde i en vis forstand, efter de
+              10 uger.
+            </p>
+            <p>Praktikken er ulønnet.</p>
+          </div>
+          <div class="who-am-i-div">
+            <h5>Hvem er jeg</h5>
+            <p>
+              Jeg er 32 år gammel, og studerer nu på mit 3. semester. Jeg bor
+              med min mand og vores datter på Amager, hvorfra jeg cykler til
+              skole hver dag.
+            </p>
+            <p>
+              Jeg vil beskrive mig selv som en social og udadvendt person, som
+              trives både i teams og i selvstændige arbejdssammenhænge. Jeg er
+              ambitiøs, stabil og arbejder målrettet.
+            </p>
+            <p>
+              Mine mål for uddannelsen er at blive ekspert i frontend udvikling,
+              og forståelse for kodning generelt - med tiden, håber jeg på at
+              udvikle evner indenfor backend, og måske arbejde mod at blive
+              fullstack udvikler.
+            </p>
+          </div>
         </div>
       </section>
       <section class="previous-work-section">
@@ -285,7 +300,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="footer">
       <section class="footer-contact-section">
         <h1>KONTAKT</h1>
         <div class="personal-contact-info-div">
