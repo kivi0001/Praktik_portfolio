@@ -53,6 +53,13 @@ h5{
     font-weight: 600;
 }
 
+li{
+    font-family: rokkitt;
+    font-size: 20px;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+
 /* HEADER */
 
 .header-section{
@@ -174,6 +181,165 @@ h5{
 }
 
 
+/* MAIN */
+
+main{
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* ABOUT ME */
+
+#about-me-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 2em;
+}
+
+#about-me-div div{
+    max-width: 500px;
+}
+
+
+/* PREVIOUS WORK */
+/* mangler hover funktioner */
+
+.previous-work-section{
+    margin-top: 5em;
+}
+
+.projects-div{
+    display: grid;
+    Grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    row-gap: 3em;
+    margin-top: 3em;
+}
+
+.projects-div div{
+    text-align: center;
+}
+
+.img-link{
+    max-width: 500px;
+    height: 300px;
+    margin: auto;
+}
+
+.img-link img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.projects-div h5{
+    margin-bottom: 0;
+}
+
+.projects-div p{
+    margin-top: 0;
+}
+
+.view-github-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+}
+
+.view-github-div:hover{
+    cursor: pointer;
+}
+
+.view-github-div a{
+    color: black;
+}
+
+.view-github-div p{
+    font-family: hepta;
+    letter-spacing: 4px;
+}
+
+.git-logo-div{
+    max-width: 80px;
+    height: 75px;
+}
+
+.git-logo-div:hover{
+    cursor: pointer;
+}
+
+.git-logo-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* PROFESSIONAL SKILLS */
+
+.competencies-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.prof-skills-headlines-divs{
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.tasks-ul li,
+.tools-ul li,
+.coding-ul li{
+    margin-top: 0.5em;
+}
+
+.icon{
+    max-width: 25px;
+    height: 25px;
+}
+.icon img{
+    width: 100%;
+    height: auto;
+}
+
+.my-field-of-interest-div{
+    background-color: #121B14;
+    color: #fffffd;
+    text-align: center;
+    padding: 3em 20vw;
+    margin: 5vw;
+}
+
+
+.my-field-of-interest-div p{
+    line-height: 1.25;
+}
+.first-line-p{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+/* RESUME */
+
+.resume-section{
+    margin-top: 6em;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #121B14;
+}
+
+/* RESPONSIVENESS */
+
 @media (max-width: 768px) {
     .header-section{
         display: block;
@@ -200,15 +366,16 @@ h5{
     }
 
     .first-line,
-.second-line{
-    font-size: 12px;
-    padding: 0 1em;
-}
+    .second-line{
+        font-size: 12px;
+        padding: 0 1em;
 
-.hero-section{
-    flex-direction: column;
-    align-items: center;
-}
+    }
+
+    .hero-section{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .headline-div{
         grid-column: 1;
@@ -221,94 +388,26 @@ h5{
     #about-me-div{
         gap: 0;
     }
+
+    .view-on-git-p{
+        display: none;
+    }
+
+    .competencies-div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .competencies-div div{
+        width: 275px;
+    }
+
+    .my-field-of-interest-div{
+        padding: 3em;
+    }
 }
-/* MAIN */
-
-main{
-    max-width: 1600px;
-    margin: auto;
-}
-
-/* ABOUT ME */
-
-#about-me-div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10%;
-    margin-top: 2em;
-}
-
-#about-me-div div{
-    max-width: 500px;
-}
-
-
-/* PREVIOUS WORK */
-
-.previous-work-section{
-    margin-top: 5em;
-}
-
-.projects-div{
-    display: grid;
-    Grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    row-gap: 3em;
-    margin-top: 3em;
-}
-
-.projects-div div{
-    text-align: center;
-}
-
-.img-link{
-    max-width: 500px;
-    height: 300px;
-    margin: auto;
-}
-
-.img-link img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.projects-div h5{
-    margin-bottom: 0;
-}
-
-.projects-div p{
-    margin-top: 0;
-}
-
-.view-github-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4em;
-}
-
-.view-github-div a{
-    color: black;
-}
-
-.view-github-div p{
-    font-family: hepta;
-    letter-spacing: 4px;
-}
-
-.git-logo-div{
-    max-width: 80px;
-    height: 75px;
-}
-
-.git-logo-div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-footer{
-    background-color: #121B14;
-}
+/* Generelt mangler:
+Sidste sektioner, 
+hover funktioner på links
+bevægelse i scroll funktioner
+responsive check */
