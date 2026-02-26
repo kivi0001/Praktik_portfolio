@@ -26,7 +26,7 @@ p{
 }
 
 p{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.15;
     letter-spacing: 2px
 }
@@ -212,8 +212,9 @@ main{
 
 .projects-div{
     display: grid;
-    Grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    Grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     row-gap: 3em;
+    column-gap: 4em;
     margin-top: 3em;
 }
 
@@ -222,9 +223,11 @@ main{
 }
 
 .img-link{
-    max-width: 500px;
-    height: 300px;
-    margin: auto;
+    display: grid;
+    Grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 4em;
+    position: relative;
+    align-items: center;
 }
 
 .img-link img{
@@ -232,6 +235,42 @@ main{
     height: 100%;
     object-fit: contain;
 }
+
+.project-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #121B14;
+}
+
+.img-link:hover .overlay {
+  opacity: 85%;
+}
+
+.project-link-text {
+  color: white;
+  font-size: 24px;
+  text-decoration: underline;
+  line-height: 1.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 .projects-div h5{
     margin-bottom: 0;
@@ -246,11 +285,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 4em;
-}
-
-.view-github-div:hover{
-    cursor: pointer;
+    margin: 4em;
 }
 
 .view-github-div a{
@@ -262,13 +297,18 @@ main{
     letter-spacing: 4px;
 }
 
-.git-logo-div{
+.view-github-div a img{
     max-width: 80px;
     height: 75px;
 }
 
-.git-logo-div:hover{
+.view-on-git-p p:hover{
     cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1em;
+    border: 1.5px solid #121B14;
+    border-radius: 20px;
 }
 
 .git-logo-div img{
@@ -329,13 +369,135 @@ main{
 
 .resume-section{
     margin-top: 6em;
+    margin-bottom: 6em;
 }
 
+.resume-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 8em;
+    margin-top: 4em;
+}
+
+ul li p:first-child{
+    font-weight: bold;
+}
+
+li p{
+    margin: 0;
+}
+
+
+
+.education-div ul,
+.work-experience-div ul{
+    padding: 0;
+    margin-top: 3em;
+}
+
+.education-div ul li,
+.work-experience-div ul li{
+    margin-bottom: 1em;
+}
 
 /* FOOTER */
 
 footer{
     background-color: #121B14;
+    color: #fffffd;
+    padding: 1.5em 8em;
+}
+
+.footer-headline-div{
+    max-width: 450px;
+    text-align: center;
+    border-bottom: 1.5px solid #fffffd;
+}
+
+.footer-contact-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3em;
+
+}
+
+.personal-contact-info-div p{
+    margin-top: 3em;
+}
+
+.personal-contact-info-div p:last-child{
+    margin-bottom: 0;
+}
+
+.links-git-linkedin-div{
+    margin-top: auto;
+}
+
+.links-git-linkedin-div div a img{
+    max-width: 60px;
+}
+
+.links-git-linkedin-div div{
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+.links-git-linkedin-div div p{
+    margin-bottom: 5px;
+}
+
+.github-footer-div a img:hover{
+    border: 2px solid #fffffd;
+    border-radius: 35px;
+    padding: 4px;
+}
+
+.linkedin-footer-div a img:hover{
+    border: 2px solid #fffffd;
+    border-radius: 20px;
+    padding: 4px 4px 2px 4px;
+}
+
+.school-website-div{
+    display: flex;
+    column-gap: 1em;
+    justify-content: end;
+}
+
+.school-info-div{
+    margin-top: auto;
+}
+
+.school-website-div a img{
+    max-width: 90px;
+    margin-top: 5px;
+}
+
+.school-website-div a{
+    padding: 0em 1em;
+}
+
+.school-website-div a:hover{
+    border: 2px solid #fffffd;
+    border-radius: 10px;
+}
+
+.internship-link-div p{
+    margin: 0;
+}
+
+.internship-link-div a{
+    font-size: 18px;
+    font-family: rokkitt;
+    letter-spacing: 2px;
+    color: #fffffd;
+}
+
+.internship-link-div a:hover{
+    border: 2px solid #fffffd;
+    border-radius: 10px;
 }
 
 /* RESPONSIVENESS */
@@ -405,9 +567,20 @@ footer{
     .my-field-of-interest-div{
         padding: 3em;
     }
+
+    #footer{
+        padding: 1em;
+    }
+
+    .footer-contact-section{
+        flex-direction: column;
+        row-gap: 2em;
+    }
+
 }
 /* Generelt mangler:
-Sidste sektioner, 
-hover funktioner på links
+
+hover funktioner på imgs
 bevægelse i scroll funktioner
-responsive check */
+responsive check
+engelsk version */
