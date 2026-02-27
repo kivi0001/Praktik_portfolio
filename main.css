@@ -10,8 +10,9 @@
 
 /* GENERAL STYLES */
 
-body{
+html, body{
     background-color: #fffffd;
+    scroll-behavior: smooth;
 }
 
 h1{
@@ -119,9 +120,8 @@ li{
     background-color: #121B14;
     color: #fffffd;
     display: flex;
-    padding: 0em 4em;
+    padding: 5em 4em;
     justify-content: center;
-    padding-top: 5em;
 }
 
 .portrait-imgs{
@@ -190,7 +190,7 @@ main{
 
 /* ABOUT ME */
 
-#about-me-div{
+.about-me-div{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -198,7 +198,7 @@ main{
     margin-top: 2em;
 }
 
-#about-me-div div{
+.about-me-div div{
     max-width: 500px;
 }
 
@@ -212,23 +212,23 @@ main{
 
 .projects-div{
     display: grid;
-    Grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    Grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     row-gap: 3em;
     column-gap: 4em;
     margin-top: 3em;
+    align-content: center;
 }
 
 .projects-div div{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .img-link{
-    display: grid;
-    Grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    column-gap: 4em;
-    position: relative;
-    align-items: center;
+    max-width: 500px;
 }
+
 
 .img-link img{
     max-width: 100%;
@@ -278,6 +278,7 @@ main{
 
 .projects-div p{
     margin-top: 0;
+    text-align: center;
 }
 
 .view-github-div{
@@ -502,9 +503,30 @@ footer{
 
 /* RESPONSIVENESS */
 
+@media (hover: none), (pointer: coarse) {
+  .overlay {
+    display: none; 
+  }
+}
+
 @media (max-width: 768px) {
     .header-section{
         display: block;
+        padding: 0em 2em;
+    }
+
+    .contact-button-div{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contact-button-div a{
+        width: 100px;
+        font-size: 10px;
+    }
+
+    .flag-btn img{
+        width: 18px;
     }
 
     .headline-div{
@@ -512,15 +534,18 @@ footer{
         margin-bottom: 1em;
     }
     h1{
-        font-size: 10px;
-    }
-
-    .second-image{
-        display: none;
+        font-size: 14px;
+        padding: 1em 1em 0.5em 1.5em;
+        text-align: center;
     }
 
     .first-image{
-        max-width: 250px;
+        display: none;
+    }
+
+    .second-image{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
     }
 
     .name-present h2{
@@ -537,18 +562,27 @@ footer{
     .hero-section{
         flex-direction: column;
         align-items: center;
+        padding: 2em;
     }
 
     .headline-div{
         grid-column: 1;
     }
 
-    .contact-button-div{
-        align-items: center;
+
+    #triangle{
+        border-top: 100px solid #121B14;
     }
 
-    #about-me-div{
+    h4{
+        margin: 4em;
+    }
+    .about-me-div{
         gap: 0;
+    }
+
+    .projects-div div h5{
+        text-align: center;
     }
 
     .view-on-git-p{
@@ -572,15 +606,44 @@ footer{
         padding: 1em;
     }
 
+    .footer-headline-div{
+        margin: 1em 3em;
+    }
+
     .footer-contact-section{
         flex-direction: column;
         row-gap: 2em;
+        padding: 2em;
     }
+
+    .personal-contact-info-div p{
+        margin-top: 1em;
+    }
+
+    .links-git-linkedin-div{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .linkedin-footer-div a img{
+        margin-top: 5px;
+    }
+
+   .school-info-div{
+    margin-top: 2em;
+   }
+
+   .school-website-div{
+    justify-content: space-between;
+    column-gap: 0;
+   }
+
+   .internship-link-div{
+    margin-top: 2em;
+   }
 
 }
 /* Generelt mangler:
 
-hover funktioner på imgs
 bevægelse i scroll funktioner
-responsive check
 engelsk version */
