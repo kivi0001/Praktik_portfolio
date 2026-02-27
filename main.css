@@ -219,14 +219,14 @@ main{
     align-content: center;
 }
 
-.projects-div div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.projects-div div h5{
+    text-align: center;
 }
+
 
 .img-link{
     max-width: 500px;
+    position: relative;
 }
 
 
@@ -501,15 +501,9 @@ footer{
     border-radius: 10px;
 }
 
-/* RESPONSIVENESS */
 
-@media (hover: none), (pointer: coarse) {
-  .overlay {
-    display: none; 
-  }
-}
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .header-section{
         display: block;
         padding: 0em 2em;
