@@ -219,6 +219,10 @@ main{
     align-content: center;
 }
 
+.projects-div div{
+    align-self: center;
+}
+
 .projects-div div h5{
     text-align: center;
 }
